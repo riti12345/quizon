@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.bxSlider').bxSlider({
+		mode:'horizontal',
+		useCSS:false,
+		infiniteLoop:true,
+		hideControlOnEnd:true,
+		speed:500
+	});
+});

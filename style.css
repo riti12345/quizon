@@ -1,0 +1,121 @@
+
+h2{
+	text-align:center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 0.8em;
+	font-family:sans-serif,verdana;
+	font-size:40px;
+	text-shadow: 2px 2px 2px #808080;
+	font-style: oblique;
+	margin-top: 0px; 
+	padding-top: 50px;
+}
+h3{
+	text-align:center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 0.8em;
+	font-family:sans-serif,verdana;
+	font-size:20px;
+	text-shadow: 2px 2px 2px #808080;
+	font-style: oblique; 
+	margin-top: 10px;	
+}
+h4{
+	
+	text-align:center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 0.8em;
+	font-family:sans-serif,verdana;
+	font-size:30px;
+	text-shadow: 2px 2px 2px #808080;
+	font-style: oblique; 
+	margin-top: 100px;	
+
+}
+p{
+	text-align:center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	line-height: 0.8em;
+	font-family:sans-serif,verdana;
+	font-size:16px;
+	text-shadow: 2px 2px 2px #808080;
+	font-style: oblique; 
+	
+}
+#header{
+	background-color: #EFFBEF;
+	float: center; 
+	margin:0px;
+	height:800px;
+	width: 100%;
+	box-shadow: 0px 5px 0px #E6F8E0;
+	max-width: auto;
+	 
+}
+.image{
+	height:400px;
+	width: 800px;
+	
+	position: absolute;
+	right: 300px;
+	box-shadow:10px 10px 10px #585858;
+	margin:100px;
+	border-radius: 15px;
+	}
+	.image:hover{
+		box-shadow: 5px 0px 40px #585858;
+    border:1px solid #585858;
+	}
+	#section-1{
+		width:100%;
+		height: 1200px;
+		margin:0px;
+		width: 100%;
+		box-shadow: 0px 5px 0px #efefef;
+	max-width: auto;
+	}
+	
+	.img-slider
+	{
+	width:100%;
+	height:800px;
+	position: absolute;
+	right: 300px;
+	margin:100px;
+	border-radius: 15px;
+
+}
+.img-slider:hover{
+	
+    border:1px #efefef;
+}
+.content{
+
+    background-color: #efefef;
+    box-shadow: 0px 5px 0px #E6F8E0;
+	float: right;
+	height: 300px;
+	width: 500px;
+	margin-right:300px;
+	margin-top: 160px;
+	opacity: 0.8;
+	
+}
+ .navbar {
+      margin-bottom: 0;
+      background-color: #EFFBEF;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+
+      font-family: Montserrat, sans-serif;
+  }
+#footer{
+	
+
+}
