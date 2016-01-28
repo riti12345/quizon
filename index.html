@@ -2,18 +2,23 @@
 <html>
 <head>
 <title>Quizon</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="bxslider/jquery.bxslider.min.js"></script>
-<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="bxslider/jquery.bxslider.min.js"></script>
+
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-<link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="game_play.js"></script>
 </head>
 <body id="myPage">
 	<!--navbar -->
-		<div class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
+	<div class="container-fluid clearfix">
+		<div class="navbar navbar-default navbar-fixed-top sticky-navigation animation fadeInDown" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,58 +32,98 @@
 			<ul class="nav navbar-nav navbar-right main-navigation">
 				<li><a href="#home" class="smoothScroll">HOME</a></li>
 				<li><a href="#feature" class="smoothScroll">FEATURES</a></li>
-				<li><a href="#team" class="smoothScroll">GENERAL</a></li>
-				<li><a href="#pricing" class="smoothScroll">QUIZES</a></li>
+				<li><a href="#team" class="smoothScroll">DEMO</a></li>
+				<li><a href="#pricing" class="smoothScroll">PLAY</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 	<!--navbar -->
+
 	<header id="header">
+		<div class="container-fluid">
 		<h2>Quizon-Geo Trivia</h2>
 	<h3>Geography Quiz</h3>
 	
-		<img src="images/quizon.jpg" class="image img-responsive wow fadeInUp" data-wow-delay="1.6s"  alt=""/>
+		<img src="images/quizon.jpg" class="image img-responsive rotateIn" data-wow-delay="1.6s"  alt=""/>
 		
-		
+		</div>
 	</header>
+   
 	<section id="section-1">
 		<h4>Features</h4>
-		
-		<ul class="bxSlider">
-			<li class="img-slider"><div class="content"><h3>Login page</h3><br><br><br><p>qwewdmmmmmmd</p></div><img  src="images/screenshots.jpg" style="height:600px;width:300px;" ></li>
-			<li class="img-slider"><div class="content"><h3>Login page</h3><br><br><br><p>qwewdmmmmmmd</p></div><img  src="images/Collages3.jpg" style="height:600px;width:300px;"  ></li>
-			<li class="img-slider"><div class="content"><h3>Login page</h3><br><br><br><p>qwewdmmmmmmd</p></div><img  src="images/Collages7.jpg" style="height:600px;width:300px;" ></li>
-			<li class="img-slider"><div class="content"><h3>Login page</h3><br><br><br><p>qwewdmmmmmmd</p></div><img src="images/Collages4.jpg" style="height:600px;width:300px;" ></li>
+				<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6">
+				<div class="demo">
+					<ul class="bxSlider">	
+		<li><div class="img-demo"><img  src="images/1.jpg" ></div></li>
+			<li><div class="img-demo"><img  src="images/2.jpg" ></div></li>
+				<li><div class="img-demo"><img  src="images/3.jpg"  ></div></li>
+					<li><div class="img-demo"><img  src="images/4.jpg" ></div></li>
+				
+				</ul>
 			
+	</div>
+</div>
+		<div class="col-lg-6">
+			<ul class="bxSlider">
+			<li><div class="content"><h3>Login with your <br>favorite account</h3><br><br><br><p>qwewdmmmmmmd</p></div></li>
+			<li><div class="content"><h3>Test your <br>geo trivia</h3><br><br><br><p>qwewdmmmmmmd</p></div></li>
+			<li><div class="content"><h3>Multiple<br> quiz type</h3><br><br><br><p>qwewdmmmmmmd</p></div></li>
+			<li><div class="content"><h3>higest score</h3><br><br><br><p>qwewdmmmmmmd</p></div></li>
 		</ul>
+	</div>
+			</div>
+</div>
+	</div>
+	</section>
 
-	
+	<section id="section-2">
+		<div class="container-fluid">
+		<h4>DeMo</h4>
+		<div class="row">
+			<div class="col-lg-6">
+		<div class="demo">
+			<!--show demo-->
+			<div class="outside"><h5>Quizon</h5>
+			<div class="general" id="game"><p>GENERAL</P></div>
+			<div class="countries" id="game"><P>COUNTRIES,STATES & CITIES</P></div>
+			<div class="flags" id="game"><P>FLAGS</P></div>
+			<div class="rivers " id="game"><P>RIVERS AND MOUNTAINS</P></div>
+			<div class="Monuments" id="game"><P>MONUMENTS & WONDER </P></div>
+			</div>	
+			</div>
+		
+	</div>
+		<div class="col-lg-6">
+				<div class="ans-display">
+					<div id="quiz"></div>
+<!--general question-->
+			<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+			</div>
+            </div>
+        </div>
+    </div>
 	</section>
 	
-	<section id="section-3">
-	</section>
 	
-<footer class="text-center">
+<footer class=" container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
 </footer>
 <section id="footer">
-					<div class="row">
-		<div class="col-md-12">
-			<nav class=" navbar navbar-default" role="navigation">
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                     
-				</div>
-				<h3 class="text-center">
-				<small><a href="privacypolicy.html">Privacy Policy</a> &nbsp; &nbsp; &nbsp;</small> <small>Copyright © All Rights Reserved - Yamunix.com</small>
-			</h3>
-			</nav>
-		</div>
-	</div>
+					
+				<p class="text-center clearfix" style="font-size:16px;color:black">
+				<small><a href="privacypolicy.html">Privacy Policy</a> &nbsp; &nbsp; &nbsp;</small> <small>Copyright © All Rights Reserved - Yamunix.com  &nbsp; &nbsp; &nbsp;</small>
+			</p>
+			
 	
 </section>
-	</footer>
+	
+</div>
 </body>
 </html>

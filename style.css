@@ -8,18 +8,17 @@ h2{
 	font-size:40px;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique;
-	margin-top: 0px; 
+	margin-top: 50px; 
 	padding-top: 50px;
 }
 h3{
 	text-align:center;
-	text-transform: capitalize;
-	letter-spacing: 3px;
-	line-height: 0.8em;
+	letter-spacing: 0.8px;
+	line-height: 150%;
 	font-family:sans-serif,verdana;
-	font-size:20px;
+	font-size:18px;
 	text-shadow: 2px 2px 2px #808080;
-	font-style: oblique; 
+	 
 	margin-top: 10px;	
 }
 h4{
@@ -29,21 +28,34 @@ h4{
 	letter-spacing: 3px;
 	line-height: 0.8em;
 	font-family:sans-serif,verdana;
-	font-size:30px;
+	font-size:40px;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique; 
 	margin-top: 100px;	
 
 }
-p{
+h5{
+	
 	text-align:center;
 	text-transform: capitalize;
 	letter-spacing: 3px;
 	line-height: 0.8em;
 	font-family:sans-serif,verdana;
-	font-size:16px;
+	font-size:30px;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique; 
+	margin-top: 50px;
+	margin-bottom: 30px;
+		
+
+}
+p{
+	text-align:center;
+	font-family:sans-serif,verdana;
+	font-size:12px;
+	color: #fff;
+	text-shadow: 2px 2px 2px #808080;
+	margin: 2px;
 	
 }
 #header{
@@ -52,33 +64,113 @@ p{
 	margin:0px;
 	height:800px;
 	width: 100%;
-	box-shadow: 0px 5px 0px #E6F8E0;
+	background-size: cover;
 	max-width: auto;
 	 
 }
+.animation{
+	-webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+         
+         .fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+         }
+
 .image{
-	height:400px;
-	width: 800px;
+	height:350px;
+	width: 650px;
 	
 	position: absolute;
 	right: 300px;
 	box-shadow:10px 10px 10px #585858;
 	margin:100px;
 	border-radius: 15px;
-	}
+ 	-webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         
+         @-webkit-keyframes rotateIn {
+            0% {
+               -webkit-transform-origin: center center;
+               -webkit-transform: rotate(-200deg);
+               opacity: 0;
+            }
+            100% {
+               -webkit-transform-origin: center center;
+               -webkit-transform: rotate(0);
+               opacity: 1;
+            }
+         }
+         
+         @keyframes rotateIn {
+            0% {
+               transform-origin: center center;
+               transform: rotate(-200deg);
+               opacity: 0;
+            }
+            100% {
+               transform-origin: center center;
+               transform: rotate(0);
+               opacity: 1;
+            }
+         }
+         
+         .rotateIn {
+            -webkit-animation-name: rotateIn;
+            animation-name: rotateIn;
+         }
 	.image:hover{
 		box-shadow: 5px 0px 40px #585858;
     border:1px solid #585858;
 	}
 	#section-1{
 		width:100%;
-		height: 1200px;
+		height: 800px;
 		margin:0px;
-		width: 100%;
-		box-shadow: 0px 5px 0px #efefef;
-	max-width: auto;
+		
+		max-width: auto;
+		padding-bottom: 200px;
+		padding-left: 200px
 	}
-	
+	#section-2{
+		width:100%;
+		height: 1000px;
+		padding-top:20px;
+		background-color: #EFFBEF;
+		max-width: auto;
+		margin-bottom: 50px;
+		padding-left: 200px
+	}
+   
 	.img-slider
 	{
 	width:100%;
@@ -98,24 +190,154 @@ p{
     background-color: #efefef;
     box-shadow: 0px 5px 0px #E6F8E0;
 	float: right;
-	height: 300px;
-	width: 500px;
-	margin-right:300px;
-	margin-top: 160px;
+	height: 550px;
+	width: 360px;
+	margin-left: -20px;
 	opacity: 0.8;
 	
 }
+/*.content:hover{
+	box-shadow: 5px 0px 40px #585858;
+    border:1px solid #585858;
+}*/
  .navbar {
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      margin-left: 20px;
       background-color: #EFFBEF;
       font-size: 12px !important;
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
-      border-radius: 0;
+    
 
       font-family: Montserrat, sans-serif;
   }
-#footer{
+.demo{
+	background: url('images/mblogo.png');
+	background-size: cover;
+	height: 650px;
+	width: 330px;
+	padding-right: 15px;
+	padding-top: 55px;
+	padding-left: 20px;
+	padding-bottom:0px;
 	
+	}
+	.demo:hover{
+		box-shadow: 5px 0px 40px #585858;
+    	border-radius: 70px;
+	}
+	.outside{
+		height: 450px;
+		width: 288px;
+		margin-top: 46px;
+		margin-left:3px;
+		background-size: cover;
+		background-color: #B0E0E6;
+    border:1px solid #B0E0E6;
+    
+		
+	}
+	
+	.img-demo{
+		height:450px;
+	    width: 288px;
+	    margin-bottom: 36px;
+	    margin-right: 40px;
+	    margin-top: -40px;
+	    margin-left: -30px;
+		
 
+	}
+	#game{
+	border:1px solid black;
+	height: 50px;
+	width: 220px;
+	margin-top:10px;
+	margin-left: 30px;
 }
+#game:hover{
+	box-shadow: 5px 0px 40px #585858;
+    border:1px solid #585858;
+}
+.general{
+	
+	background-color: red;
+	margin-top:60px;
+	
+}
+
+.countries{
+	
+	background-color: red;
+	margin-top:10px;
+	
+}
+
+.flags{
+	
+	background-color: red;
+	margin-top:10px;
+	
+}
+
+.rivers{
+	
+	background-color: red;
+	margin-top:10px;
+	
+}
+
+.Monuments{
+	
+	background-color: red;
+	margin-top:10px;
+	
+}
+.ans-display{
+	height: 580px;
+	width: 360px;
+	 background-color: #B0E0E6;
+    border:4px solid #B0E0E6;
+    border-radius:5px;
+    color: #FFFFFF;
+	margin-top: 20px;
+	border-radius: 15px;
+}
+.ans-display:hover{
+	box-shadow: 5px 0px 40px #585858;
+    border:1px solid #585858;
+}
+#next ,#prev{
+    border:1px solid;
+    border-radius:5px;
+    width: 40px;
+    padding-left:5px;
+    padding-right: 5px;
+    position: absolute;
+	right: 280px;
+	bottom:50px;
+    float:right;
+    background-color: #DCDCDC;
+    
+}
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+}
+
+
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+#prev {
+   margin-right:50px;
+}
+.column{
+  	margin-left: 20px;
+  	margin-bottom: 20px;
+   
+  	
+  	}
