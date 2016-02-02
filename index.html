@@ -11,11 +11,12 @@
 	<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 	<link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="popup.css"/>
 
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="game_play.js"></script>
 </head>
-<body id="myPage">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<!--navbar -->
 	<div class="container-fluid clearfix">
 		<div class="navbar navbar-default navbar-fixed-top sticky-navigation animation fadeInDown" role="navigation">
@@ -30,11 +31,11 @@
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right main-navigation">
-				<li><a href="#home" class="smoothScroll">HOME</a></li>
-				<li><a href="#feature" class="smoothScroll">FEATURES</a></li>
-				<li><a href="#team" class="smoothScroll">DEMO</a></li>
-				<li><a href="#pricing" class="smoothScroll">PLAY</a></li>
-				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+				<li><a href="#header" class="smoothScroll fadeIn Up">HOME</a></li>
+				<li><a href="#section-1" class="smoothScroll fadeIn Up">FEATURES</a></li>
+				<li><a href="#section-2" class="smoothScroll">DEMO</a></li>
+				<li><a href="#section-3" class="smoothScroll">PLAY</a></li>
+				<li><a href="#section-4" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
@@ -89,20 +90,38 @@
 			<!--show demo-->
 			<div class="outside"><h5>Quizon</h5>
 			<div class="general" id="game"><p>GENERAL</P></div>
-			<div class="countries" id="game"><P>COUNTRIES,STATES & CITIES</P></div>
-			<div class="flags" id="game"><P>FLAGS</P></div>
-			<div class="rivers " id="game"><P>RIVERS AND MOUNTAINS</P></div>
-			<div class="Monuments" id="game"><P>MONUMENTS & WONDER </P></div>
+			<div class="countries" id="game"><a href="#loginScreen"><P>COUNTRIES,STATES & CITIES</P>
+			</a>
+			</div>
+		<div id="loginScreen">
+		<h2>For more Click here</h2>
+		<a href="https://play.google.com/store/apps/dev?id=6689400242295987030" target="_blank">
+  		<img class="p-store"src="images/g-p-logo.png" width="100" height="50"></a>
+		<a href="#" class="cancel">X</a>
+		</div>
+		<div id="cover">
+		</div>
+			<div class="flags" id="game"><a href="#loginScreen"><P>FLAGS</P></a></div>
+			<div class="rivers " id="game"><a href="#loginScreen"><P>RIVERS AND MOUNTAINS</P></a></div>
+			<div class="Monuments" id="game"><a href="#loginScreen"><P>MONUMENTS & WONDER </P></a></div>
 			</div>	
 			</div>
 		
 	</div>
 		<div class="col-lg-6">
 				<div class="ans-display">
+					<div class="countdown">
+					<span id="minutes">00</span>
+					<span>:</span>
+					<span id="seconds">00</span>
+					</div>
+			
+   			<br/>
 					<div id="quiz"></div>
 <!--general question-->
 			<div class='button' id='next'><a href='#'>Next</a></div>
     		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
 			</div>
             </div>
         </div>

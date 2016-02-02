@@ -71,46 +71,76 @@ $(document).ready(function() {
   
   // Creates and returns the div that contains the questions and 
   // the answer selections
-  function createQuestionElement(index) {
+ function createQuestionElement(index) {
+  
     var qElement = $('<div>', {
       id: 'question'
     });
     
-    var header = $('<h2>Question ' + (index + 1) + ':</h2>'+'<br><br><br><br>');
-    qElement.append(header);
+    /*var header = $('<h2>Q. ' + (index + 1) + ':</h2>');
+    qElement.append(header);*/
     
     var question = $('<h3>').append(questions[index].question);
     qElement.append(question);
     
-    var radioButtons = createRadios(index);
-    qElement.append(radioButtons);
+    var optionbutton = createoptions(index);
+    qElement.append(optionbutton);
     
     return qElement;
   }
   
   // Creates a list of the answer choices as radio inputs
-  function createRadios(index) {
-    var radioList = $('<br><br><ul>');
+  function createoptions(index) {
+    var optionbox = $('<div>');
     var item;
     var input = '';
-    for (var i = 0; i < questions[index].choices.length; i++) {
-      item = $('<li>');
-      input = '<input type="radio" name="answer" value=' + i + ' />';
-      input += questions[index].choices[i];
+    var option=['A','B','C','D','X'];
+    for ( i = 0; i < questions[index].choices.length; i++) {
+      item = $('<div>');
+      input = '<td>'+'<div class="option" name="ans">' + option[i] + '</div>'+'</td>';
+      input+='<td>'+'<div class="answer">'+questions[index].choices[i]+'</div>'+'</td>';
       item.append(input);
-      radioList.append(item);
+      optionbox.append(item);
     }
-    return radioList;
+    return optionbox;
   }
   
   // Reads the user selection and pushes the value to an array
   function choose() {
-    selections[questionCounter] = +$('input[name="answer"]:checked').val();
+    selections[questionCounter] = +$('<div class="option">').val();
+   /* if( selections[questionCounter]!=correctAnswer)
+    {
+       input = '<td>'+'<div class="option" name="ans">' + option[4] + '</div>'+'</td>';
+    }*/
   }
-  
+
+  function countdown()
+  {
+
+          var sTime = new Date().getTime();
+          var countDown = 10;
+
+          function UpdateTime() {
+              var cTime = new Date().getTime();
+              var diff = cTime - sTime;
+              var seconds = countDown - Math.floor(diff / 1000);
+              if(seconds>=0)
+              {
+                var minutes=Math.floor(seconds/60);
+                seconds-=minutes*60;
+                $("#minutes").text(minutes <10? "0" +minutes : minutes);
+                $("#seconds").text(seconds <10? "0"+seconds : seconds);
+
+              }
+                   }
+          UpdateTime();
+          var counter = setInterval(UpdateTime, 500);
+          }
+    
   // Displays next requested element
   function displayNext() {
     quiz.fadeOut(function() {
+      countdown();
       $('#question').remove();
       
       if(questionCounter < questions.length){
@@ -140,7 +170,7 @@ $(document).ready(function() {
   
   // Computes score and returns a paragraph element to be displayed
   function displayScore() {
-    var score = $('<br><br><br><br><br><h3>',{id: 'question'});
+    var score = $('<h3>',{id: 'question'});
     
     var numCorrect = 0;
     for (var i = 0; i < selections.length; i++) {

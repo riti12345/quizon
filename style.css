@@ -18,7 +18,7 @@ h3{
 	font-family:sans-serif,verdana;
 	font-size:18px;
 	text-shadow: 2px 2px 2px #808080;
-	 
+	 margin-bottom: 30px;
 	margin-top: 10px;	
 }
 h4{
@@ -154,12 +154,13 @@ p{
 	}
 	#section-1{
 		width:100%;
-		height: 800px;
-		margin:0px;
-		
+		height: 1000px;
+		padding-top: 20px;
+		padding-right:20px; 
+		background: rgba(0,0,0,0.6);
 		max-width: auto;
-		padding-bottom: 200px;
-		padding-left: 200px
+		padding-right: 200px;
+		padding-left: 200px;
 	}
 	#section-2{
 		width:100%;
@@ -232,7 +233,7 @@ p{
 		margin-top: 46px;
 		margin-left:3px;
 		background-size: cover;
-		background-color: #B0E0E6;
+		background-color: #1E90FF;
     border:1px solid #B0E0E6;
     
 		
@@ -258,6 +259,23 @@ p{
 #game:hover{
 	box-shadow: 5px 0px 40px #585858;
     border:1px solid #585858;
+}
+.option{
+
+    width:50px;
+    height:50px;
+    margin: 5px;
+    padding: 0px;
+    background-color: orange;
+}
+.option:hover{
+     background-color: red;
+}
+.answer{
+    width:250px;
+    height:50px;
+    margin: 5px;
+    background-color: green;
 }
 .general{
 	
@@ -294,20 +312,32 @@ p{
 	
 }
 .ans-display{
-	height: 580px;
+	height: 550px;
 	width: 360px;
-	 background-color: #B0E0E6;
-    border:4px solid #B0E0E6;
+	 background-color: #1E90FF;
+    border:1px solid #B0E0E6;
     border-radius:5px;
     color: #FFFFFF;
 	margin-top: 20px;
+	padding-top: 60px;
 	border-radius: 15px;
 }
 .ans-display:hover{
 	box-shadow: 5px 0px 40px #585858;
     border:1px solid #585858;
 }
-#next ,#prev{
+.countdown{
+	margin-top:-50px;
+    height:50px;
+    width:356px;
+    border-radius: 5px;
+    background-color:blue;
+
+}
+#minutes,#seconds{
+    text-align: center;
+}
+#next ,#prev,#start{
     border:1px solid;
     border-radius:5px;
     width: 40px;
@@ -334,6 +364,12 @@ p{
 
 #prev {
    margin-right:50px;
+    display:none;
+}
+
+#start {
+    display:none;
+    width: 90px;
 }
 .column{
   	margin-left: 20px;
