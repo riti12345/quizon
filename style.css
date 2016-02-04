@@ -1,4 +1,11 @@
-
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+body{
+	
+	max-height: auto;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	font-family: Nunito;
+}
 h2{
 	text-align:center;
 	text-transform: capitalize;
@@ -8,18 +15,18 @@ h2{
 	font-size:40px;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique;
-	margin-top: 50px; 
-	padding-top: 50px;
+	
 }
 h3{
 	text-align:center;
 	letter-spacing: 0.8px;
 	line-height: 150%;
 	font-family:sans-serif,verdana;
-	font-size:18px;
+	font-size:24px;
+	color: #FFF;
 	text-shadow: 2px 2px 2px #808080;
-	 margin-bottom: 30px;
-	margin-top: 10px;	
+	
+		
 }
 h4{
 	
@@ -29,10 +36,9 @@ h4{
 	line-height: 0.8em;
 	font-family:sans-serif,verdana;
 	font-size:40px;
+	color: #fff;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique; 
-	margin-top: 100px;	
-
 }
 h5{
 	
@@ -42,32 +48,80 @@ h5{
 	line-height: 0.8em;
 	font-family:sans-serif,verdana;
 	font-size:30px;
+	color:#fff;
 	text-shadow: 2px 2px 2px #808080;
 	font-style: oblique; 
-	margin-top: 50px;
-	margin-bottom: 30px;
-		
-
 }
 p{
 	text-align:center;
 	font-family:sans-serif,verdana;
 	font-size:12px;
 	color: #fff;
+	text-align: justify;
 	text-shadow: 2px 2px 2px #808080;
 	margin: 2px;
 	
 }
+.slide{
+	position:relative;
+	transform-style:inherit;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+}
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
 #header{
-	background-color: #EFFBEF;
+	background-image:url(images/ZenBG.png);
+	background-attachment:fixed;
 	float: center; 
 	margin:0px;
+	z-index: 0;
 	height:800px;
 	width: 100%;
 	background-size: cover;
-	max-width: auto;
-	 
-}
+	 }
+	 #section-3:before{
+		background: url(images/cd-img-1.jpg);
+		 transform: translateZ(-1px) scale(2);
+  			z-index:-1;
+  			background-size: cover;
+	}
+	 #section-1:before{
+		width:100%;
+		height: 1200px;
+	
+		margin-top: -60px;
+		margin-left: -10px;
+		padding-bottom: 80px;
+		padding-left: 100px;
+		background:url(images/ZenBG-1.png);
+		 transform: translateZ(-1px) scale(2);
+  			z-index:-1;
+  			background-size: cover;
+	}
+
+	#section-2{
+		width:100%;
+		background:url(images/ZenBG-2.png);
+		height: 1100px;
+		background-size: cover;
+
+		padding-left: 200px;
+		 background-attachment: fixed;
+	}
+	#footer{
+			width:100%;
+			height: 50px;
+			padding:5px;
+			margin-top: -50px;
+			margin-bottom:-20px;
+   	 background-color:#2D628D;
+   	  background-attachment: fixed;
+     }
 .animation{
 	-webkit-animation-duration: 10s;
             animation-duration: 10s;
@@ -101,7 +155,6 @@ p{
             -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
          }
-
 .image{
 	height:350px;
 	width: 650px;
@@ -152,26 +205,25 @@ p{
 		box-shadow: 5px 0px 40px #585858;
     border:1px solid #585858;
 	}
-	#section-1{
-		width:100%;
-		height: 1000px;
-		padding-top: 20px;
-		padding-right:20px; 
-		background: rgba(0,0,0,0.6);
-		max-width: auto;
-		padding-right: 200px;
-		padding-left: 200px;
+
+.cd-background-wrapper{
+	overflow:hidden;
+	perspective:4000px;
 	}
-	#section-2{
-		width:100%;
-		height: 1000px;
-		padding-top:20px;
-		background-color: #EFFBEF;
-		max-width: auto;
-		margin-bottom: 50px;
-		padding-left: 200px
-	}
-   
+.cd-floating-background{
+	transform-style:preserve-3d;
+}
+.cd-floating-background img:first-child{
+	transform:translateZ(50px);
+}
+.cd-floating-background img:nth-child(2)
+{
+	transform:translateZ(290px);
+}
+.cd-floating-background img:nth-child(3)
+{
+	transform:translateZ(400px);
+}
 	.img-slider
 	{
 	width:100%;
@@ -186,66 +238,61 @@ p{
 	
     border:1px #efefef;
 }
-.content{
-
-    background-color: #efefef;
-    box-shadow: 0px 5px 0px #E6F8E0;
+.content{	 
 	float: right;
 	height: 550px;
-	width: 360px;
-	margin-left: -20px;
-	opacity: 0.8;
+	width: 350px;
+	padding:5px;
 	
 }
-/*.content:hover{
-	box-shadow: 5px 0px 40px #585858;
-    border:1px solid #585858;
-}*/
  .navbar {
       margin-bottom: 20px;
-      margin-left: 20px;
-      background-color: #EFFBEF;
-      font-size: 12px !important;
+      background-color:#2D628D;
+      opacity: 0.4;
+      font-size: 14px !important;
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
-    
-
-      font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
+    z-index: 10;
   }
-.demo{
+  .title{
+  	margin-top:50px;
+  	margin-bottom: 100px;
+  	text-align: center;
+  }
+.demo,.ans-demo,.demo-1{
 	background: url('images/mblogo.png');
 	background-size: cover;
 	height: 650px;
 	width: 330px;
+	margin-left: 50px;
+	margin-bottom: 50px;
 	padding-right: 15px;
 	padding-top: 55px;
 	padding-left: 20px;
 	padding-bottom:0px;
-	
 	}
 	.demo:hover{
 		box-shadow: 5px 0px 40px #585858;
     	border-radius: 70px;
 	}
-	.outside{
+	.outside,.ans-display{
 		height: 450px;
 		width: 288px;
 		margin-top: 46px;
 		margin-left:3px;
 		background-size: cover;
-		background-color: #1E90FF;
-    border:1px solid #B0E0E6;
-    
-		
-	}
-	
+		/*background-color: #1E90FF;
+    border:1px solid #B0E0E6;*/
+    }
+ 
 	.img-demo{
-		height:450px;
-	    width: 288px;
+		height:455px;
+	    width: 300px;
 	    margin-bottom: 36px;
-	    margin-right: 40px;
+	    margin-right: 35px;
 	    margin-top: -40px;
-	    margin-left: -30px;
+	    margin-left: -65px;
 		
 
 	}
@@ -263,7 +310,7 @@ p{
 .option{
 
     width:50px;
-    height:50px;
+    height:45px;
     margin: 5px;
     padding: 0px;
     background-color: orange;
@@ -272,66 +319,31 @@ p{
      background-color: red;
 }
 .answer{
-    width:250px;
-    height:50px;
+    width:200px;
+    height:45px;
     margin: 5px;
     background-color: green;
 }
 .general{
 	
-	background-color: red;
+	background-color:green;
 	margin-top:60px;
 	
 }
 
-.countries{
+.countries,.flags,.rivers,.Monuments{
 	
-	background-color: red;
+	background-color:orange;
 	margin-top:10px;
 	
 }
 
-.flags{
-	
-	background-color: red;
-	margin-top:10px;
-	
-}
-
-.rivers{
-	
-	background-color: red;
-	margin-top:10px;
-	
-}
-
-.Monuments{
-	
-	background-color: red;
-	margin-top:10px;
-	
-}
-.ans-display{
-	height: 550px;
-	width: 360px;
-	 background-color: #1E90FF;
-    border:1px solid #B0E0E6;
-    border-radius:5px;
-    color: #FFFFFF;
-	margin-top: 20px;
-	padding-top: 60px;
-	border-radius: 15px;
-}
-.ans-display:hover{
-	box-shadow: 5px 0px 40px #585858;
-    border:1px solid #585858;
-}
 .countdown{
-	margin-top:-50px;
+	margin-top:10px;
     height:50px;
-    width:356px;
+    width:288px;
     border-radius: 5px;
-    background-color:blue;
+  
 
 }
 #minutes,#seconds{
@@ -344,8 +356,8 @@ p{
     padding-left:5px;
     padding-right: 5px;
     position: absolute;
-	right: 280px;
-	bottom:50px;
+	right:600px;
+	bottom:390px;
     float:right;
     background-color: #DCDCDC;
     
@@ -374,6 +386,5 @@ p{
 .column{
   	margin-left: 20px;
   	margin-bottom: 20px;
+   }
    
-  	
-  	}

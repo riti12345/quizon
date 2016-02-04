@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	$('.bxSlider').bxSlider({
 		mode:'vertical',
@@ -32,10 +33,43 @@ $(document).ready(function(){
     });
 			 $(".content").show(function(){
 			 	$("p").fadeIn(1000);
-			 	/*,function(){
-			 		$("p").fadeIn(4000);*/
 			 	});
-			 	return false;
+
+			 $('.countdown').hide();
+			 $('#next').hide();
+			$('.ans-demo').hide();
+			$(".general").click(function()
+			 {
+			 	$('.demo').fadeOut('slow');
+			 	$('.ans-demo').fadeIn();
+			 	 $('.countdown').show();
+			 $('#next').show();
+			});
+			/*$('.outside').not($div).fadeout(slow);
+			if($div.is(":visible"))
+				{
+					$div.hide();
+				}
+				else{
+					$('.ans-display').show();
+				}
+				  e.preventDefault();
+					/*$('<div class="ans-display">\
+					<div class="countdown">\
+					<span id="minutes">00</span>\
+					<span>:</span>\
+					<span id="seconds">00</span>\
+					</div>\
+			
+   			<br/>\
+					<div id="quiz"></div>\
+			<div class='button' id='next'><a href='#'>Next</a></div>\
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>\
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>\
+			</div>').show();//.after('.outside').show().delay(1000);
+
+
+			 });*/
 			 
 	 });
 
@@ -47,22 +81,3 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-/*
-
-		$('.ans-display').append($('.G-ques').append("<p>"+question+ "</p>"+"<br>"+" <br>" + "<li>"+option+ "<p>"+answer+"</p>"+"</li>"));
-	});
-  
-
-	$('.countries').on('click',function(){
-		$('.C-ques').insertAfter(".ans-display").delay(5000).hide();
-
-	});
-
-	*/
-   

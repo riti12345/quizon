@@ -1,13 +1,15 @@
 $(document).ready(function() {
+  $('.general').click(function()
+  {
   var questions = [{question: "Q.Identify the country represented by this flag", choices: ['A','B','C','D'], correctAnswer: 2 }, 
 
                     { question: "Q.what is the capital of russia", choices: ['A','B','C','D'],correctAnswer: 4 }, 
 
-                    { question: "What is 8*9?", choices: [72, 99, 108, 134, 156], correctAnswer: 0 },
+                    { question: "What is 8*9?", choices: [72, 99, 108, 134], correctAnswer: 0 },
 
                      {  question: "Q.Which of the following is the largest river of world.", choices:['A','B','C','D'], correctAnswer: 3},
   
-                    {  question: "What is 8*8?", choices: [20, 30, 40, 50, 64], correctAnswer: 4 }];
+                    {  question: "What is 8*8?", choices: [20, 30, 40, 64], correctAnswer: 4 }];
   
   
   var questionCounter = 0; //Tracks question number
@@ -94,7 +96,7 @@ $(document).ready(function() {
     var optionbox = $('<div>');
     var item;
     var input = '';
-    var option=['A','B','C','D','X'];
+    var option=['A','B','C','D'];
     for ( i = 0; i < questions[index].choices.length; i++) {
       item = $('<div>');
       input = '<td>'+'<div class="option" name="ans">' + option[i] + '</div>'+'</td>';
@@ -183,4 +185,5 @@ $(document).ready(function() {
                  questions.length + ' right!!!');
     return score;
   }
+});
 });

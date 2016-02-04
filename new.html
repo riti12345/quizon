@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quizon</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="bxslider/jquery.bxslider.min.js"></script>
+	 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+	<link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="new.css"/>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="game_play.js"></script>
+	<script type="text/javascript" src="parallax.js-1.4.2/parallax.min.js"></script>
+</head>
+<body>
+	<div class="navbar  navbar-fixed-top sticky-navigation animation fadeInDown " role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand" style="color:#fff;">QUIZON</a>
+		</div>
+	</div>
+</div>
+	<div class="row">
+	<div class="col-lg-8">
+		<div class="row">
+		<div class="text">
+		<h2 class="animation fadeInDown">Quizon-Geo Trivia</h2>
+	<h3 class="animation fadeInDown" style="font-size:24px;">Geography Quiz</h3>
+</div>
+<div class="text-small">
+	 "QuizOn - Geo Trivia" presents World Geography questions in a logical and interesting way.
+Carefully curated set of questions to keep you entertained. Play and learn with help of five different sections.
+</div>
+<a href="https://play.google.com/store/apps/dev?id=6689400242295987030" target="_blank">
+  		<img class="play-store"src="images/g-p-logo.png"></a>
+  	</div>
+  	<hr style="border-top: 2px dotted black;margin-left:150px; "/>
+  	<div class="row">
+<div class="text">
+		<h2>Awesome Features</h2></div>
+		<div class="text-small" ><table >
+				<tr><td><img class="placeholders" src="images/general.png"></td><td class="text-small"><strong>General</strong>: Mix of all the categories.</td></tr>
+				<tr><td><img class="placeholders" src="images/flag.png"></td><td class="text-small"><strong>Flags</strong> : Find about the World Flags.</td></tr>
+				<tr><td  class="text-small"><img class="placeholders" src="images/states.png"></td><td><strong> Countries, States & Cities</strong>: Learn about places all over the world.</td></tr>
+				<tr><td><img class="placeholders" src="images/rivers.jpg" height="60",width="70"></td><td class="text-small"><strong>Rivers and Mountains</strong> : Learn about rivers, mountains, oceans and much more.</td></tr>
+				<tr><td><img class="placeholders" src="images/monuments.png"></td><td ><strong>Monuments
+					& Wonders </strong>: Get your world heritage knowledge a go and learn amazing facts.</td></tr>
+				
+			</table>
+
+	</div>
+</div>
+<hr style="border-top: 2px dotted black;margin-left:150px; "/>
+	<div class="row">
+		<div class="text">
+		<h2>Play Demo</h2></div>
+		<div class="demo" style="margin-left:300px; margin-top:100px;">
+			<!--show demo-->
+			<div class="outside"><h5 style="margin-top:110px; margin-bottom:50px;">Quizon</h5>
+		<input type="button" class="general" id="game" value="GENERAL">
+		<a href="#loginScreen"><input type="button" class="countries" id="game" value="COUNTRIES,STATES & CITIES" disabled></a>
+		<a href="#loginScreen"><input type="button" class="flags" id="game" value="FLAGS" disabled></a>
+		<a href="#loginScreen"><input type="button" class="rivers " id="game" value="RIVERS AND MOUNTAINS" disabled></a>
+		<a href="#loginScreen"><input type="button" class="Monuments" id="game" value="MONUMENTS & WONDER" disabled></a>
+			</div>
+		</div>
+		<div class="ans-demo" style="margin-left:300px; margin-top:100px;">
+				<div class="ans-display">
+					<div class="countdown">
+					<span id="minutes">00</span>
+					<span>:</span>
+					<span id="seconds">00</span>
+					</div>
+			
+   			<br/>
+					<div id="quiz" ></div>
+			<div class='button space' id='next'><a href='#'>Next</a></div>
+    		<div class='button space' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button space' id='start'> <a href='#'>Start Over</a></div>
+			</div>
+           
+        </div>
+	</div>
+	<hr style="border-top: 2px dotted black;margin-left:400px; "/>
+</div>
+	<div class="col-lg-4">
+		<div class="mob">
+					<ul class="bxSlider">	
+		<li><div class="img-demo"><img  src="images/1.jpg" height="370" width="227" ></div></li>
+			<li><div class="img-demo"><img  src="images/2.jpg" height="370" width="227"  ></div></li>
+				<li><div class="img-demo"><img  src="images/3.jpg" height="370" width="227"  ></div></li>
+					<li><div class="img-demo"><img  src="images/4.jpg" height="370" width="227"  ></div></li>
+				
+				</ul>
+			
+	</div>
+	</div>

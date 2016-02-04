@@ -1,0 +1,57 @@
+body{
+	background: url(images/seamless_paper_texture.png);
+	background-attachment: fixed;
+}
+.mob{
+	background: url('images/mblogo.png');
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 500px;
+	width: 330px;
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 50px;
+	padding-top: 26px;
+	padding-left:10px;
+
+}
+.text{
+	font-size: 44px;
+	position: relative;
+    z-index: 2;
+	margin-left:100px;
+	margin-right: 50px;
+	margin-top: 180px;
+}
+.text-small{
+	position: relative;
+    z-index: 2;
+	font-size: 24px;
+	text-align: justify;
+	margin-left:200px;
+	margin-right: 150px;
+	margin-top:100px;
+}
+.play-store{
+	height:70px;
+		width:130px;
+		margin-top:50px;
+		margin-left:550px;
+}
+.placeholders{
+	height:40px;
+	width: 40px;
+	margin:30px;
+	margin-left:80px;
+}
+.space{
+	 border:1px solid;
+    border-radius:5px;
+    width: 40px;
+    position:absolute;
+	right:200px;
+	bottom:150px;
+    float:right;
+    background-color: #DCDCDC;
+	
+}
